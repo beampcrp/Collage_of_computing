@@ -1,0 +1,145 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: white;
+    background-size: center;
+    background-position: center;
+    font-family: sans-serif;
+}
+.menu-bar
+{
+    background: rgba(0, 0, 0, 0.752);
+    text-align: center;
+    position: Fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+.menu-bar ul li
+{
+    width: 155px;
+    margin: 10px;
+    padding: 10px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover
+{
+    background: rgba(128, 128, 128, 0.701);
+    border-radius: 3px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul a
+{
+    color: black;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted black;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    background: lightgray;
+    border-radius: 3px;
+    margin: 3px;
+    padding: 3px;
+}
+.fa-angle-right
+{
+   color: black;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub-menu-1
+{
+    font-size: 14px;
+}
+.menu-bar .fa-house
+{
+margin-right: 3px;
+}
+.menu-bar .fa-user
+{
+margin-right: 3px;
+}
+.menu-bar .fa-newspaper
+{
+margin-right: 3px;
+}
+.menu-bar .fa-graduation-cap
+{
+margin-right: 3px;
+}
+.menu-bar .fa-person
+{
+margin-right: 3px;
+}
+.menu-bar .fa-money-check-dollar
+{
+margin-right: 3px;
+}
+.menu-bar .fa-book-bookmark
+{
+margin-right: 3px;
+}
+.menu-bar .fa-phone
+{
+margin-right: 3px;
+}
+.menu-bar .fa-sort-down
+{
+    margin-left: 4px;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -15px;
+    margin-left: 140px;
+    background: white;
+}
